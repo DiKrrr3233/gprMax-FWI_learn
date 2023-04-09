@@ -10,20 +10,9 @@ import numpy as np
 import matplotlib.colors as colors
 import os
 import cv2
-#
 
 
 class gprMaxInversion():
-    #gprMaxInversion 类的 __init__ 方法，用于初始化类的实例。
-    #在这个方法中，定义了许多实例变量，包括 path_gprMax、forward_inputfilename、forward_inputdirectory、
-    # forward_outputdirectory、back_inputfilename、back_inputdirectory、back_outputdirectory 和 para_value_tensor 等。
-    #这些变量用于存储 gprMax 的路径、正演输入文件名、正演输入目录、正演输出目录、反演输入文件名、反演输入目录、反演输出目录和参数值张量。
-    #此外，还定义了一些与模型有关的实例变量，如 x_len、y_len、sig_len、num_rceivers 和 num_shot 等。
-    # 这些变量用于存储模型的尺寸和信号长度，以及接收器和射击的数量。
-    #最后，还定义了一些与正演和反演场相关的实例变量，
-    #如 forward_fields、backward_fields、p_grad_fields、c_grad_fields 和 gt_obs_fields 等。
-    #这些变量用于存储正演场、反演场、电容率梯度场、电导率梯度场和地面真实观测场。
-    
     def __init__(self):
         self.path_gprMax = ''
         self.forward_inputfilename = ''
